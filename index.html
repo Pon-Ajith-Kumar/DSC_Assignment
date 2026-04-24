@@ -1,9 +1,104 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-  <title>Azure Static Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+```
+    header {
+        padding: 40px;
+        font-size: 2em;
+        font-weight: bold;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .card {
+        background: white;
+        color: black;
+        padding: 20px;
+        border-radius: 12px;
+        width: 250px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        background: #667eea;
+        color: white;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    button:hover {
+        background: #5a67d8;
+    }
+
+    footer {
+        margin-top: 30px;
+        padding: 15px;
+        font-size: 0.9em;
+        opacity: 0.8;
+    }
+</style>
+```
+
 </head>
 <body>
-  <h1>Hello from Azure Static Website</h1>
+
+<header>
+    🌐 My Static Website
+</header>
+
+<div class="container">
+    <div class="card">
+        <h3>About</h3>
+        <p>This site is hosted using GitHub Pages.</p>
+        <button onclick="alert('Hello!')">Click Me</button>
+    </div>
+
+```
+<div class="card">
+    <h3>Features</h3>
+    <p>Fast, free and easy deployment.</p>
+    <button onclick="alert('Nice!')">Explore</button>
+</div>
+
+<div class="card">
+    <h3>Contact</h3>
+    <p>Made for learning cloud deployment.</p>
+    <button onclick="alert('Thanks!')">Say Hi</button>
+</div>
+```
+
+</div>
+
+<footer>
+    © 2026 My GitHub Page
+</footer>
+
 </body>
 </html>
